@@ -74,6 +74,7 @@ Vous pouvez essayer cet exemple vous-même !
 4. Faites un `commit` et poussez vos modifications sur GitHub.
 
 👉 Résultat attendu : une action s'exécutera automatiquement et affichera "Bonjour GitHub Actions !" dans l'onglet **Actions** de votre dépôt.
+![Résultat du workflow](../assets/workflow-success-exemple-hello.png)
 
 ---
 

@@ -41,6 +41,8 @@ Ce projet vous propose une introduction progressive pour comprendre, créer et m
 
 👉 3. Suivez les exercices proposés dans [docs/exercices.md](docs/04-exercices.md).
 
+A tout moment [Consulter le glossaire des termes GitHub Actions](docs/05-glossaire.md) pour clarifier les termes si besoin est.
+
 Bonne découverte ! ✨
 
 ## 📖 Licence

@@ -13,7 +13,7 @@ Avant de suivre ce tutoriel, assurez-vous de :
    👉 Choisissez Public ou Privé selon votre préférence.  
    👉 Initialisez avec un fichier README.
 
-2. **Créer le dossier **wokflows** dans votre dépôt : .github/workflows/
+2. **Créer le dossier **wokflows** dans votre dépôt** : .github/workflows/
 
 ℹ️ **Note :** Le dossier `.github` est un **dossier caché**.  
 Il est **visible sur la plateforme GitHub**, mais si vous travaillez en local via la CLI (terminal), pensez à utiliser la commande suivante pour l'afficher : ls -la

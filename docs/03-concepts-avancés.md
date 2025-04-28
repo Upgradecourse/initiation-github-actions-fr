@@ -148,7 +148,7 @@ jobs:
         run: echo "$MESSAGE"
       
       - name: Utiliser un secret dans les logs
-        run: echo "La clé API est : ${{ secrets.MY_API_KEY }}"
+        run: echo "La clé API est :${{ secrets.MY_API_KEY }}"
 ```
 
 2. **Ajoutez le secret `MY_API_KEY` dans la section "Secrets" de votre dépôt :**

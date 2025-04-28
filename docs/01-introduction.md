@@ -6,14 +6,14 @@ Bienvenue dans ce premier chapitre d'**initiation à GitHub Actions** !
 
 ## 🛠️ Avant de commencer
 
-Avant de suivre ce tutoriel, assurez-vous de :
+Avant de suivre ce tutoriel, assurez-vous de garder cet onglet ouvert pour suivre les consignes et d'ouvrir un nouvel onglet pour créer votre dépot et pratiquer:
 
 1. **Créer un nouveau dépôt GitHub**  
    👉 Nom recommandé : `initiation-github-actions`  
    👉 Choisissez Public ou Privé selon votre préférence.  
    👉 Initialisez avec un fichier README.
 
-2. **Créer le dossier **wokflows** dans votre dépôt** : .github/workflows/
+2. **Créer le dossier **wokflows** dans votre dépôt** : .github/workflows/ c'est la où nos différents fichiers de workflows se retrouveront.
 
 ℹ️ **Note :** Le dossier `.github` est un **dossier caché**.  
 Il est **visible sur la plateforme GitHub**, mais si vous travaillez en local via la CLI (terminal), pensez à utiliser la commande suivante pour l'afficher : ls -la

@@ -35,11 +35,11 @@ Ce projet vous propose une introduction progressive pour comprendre, créer et m
 
 ## 🚀 Commencez ici
 
-👉 1. Lisez [docs/introduction.md](docs/introduction.md) pour comprendre GitHub Actions.
+👉 1. Lisez [docs/introduction.md](docs/01-introduction.md) pour comprendre GitHub Actions.
 
-👉 2. Passez à [docs/premiers-workflows.md](docs/premiers-workflows.md) pour créer votre premier workflow.
+👉 2. Passez à [docs/premiers-workflows.md](docs/02-premiers-workflows.md) pour créer votre premier workflow.
 
-👉 3. Suivez les exercices proposés dans [docs/exercices.md](docs/exercices.md).
+👉 3. Suivez les exercices proposés dans [docs/exercices.md](docs/04exercices.md).
 
 Bonne découverte ! ✨
 

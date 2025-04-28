@@ -78,7 +78,7 @@ Dans les logs :
 
 📸 Résultat attendu
 
-![Résultat du workflow réussi](../assets/workflow-success-premier.png)
+![Résultat du workflow réussi](../assets/workflow-succes-premier-workflow.png)
 
 
 🔎 Explication des lignes importantes du workflow

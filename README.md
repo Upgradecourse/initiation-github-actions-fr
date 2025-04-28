@@ -39,7 +39,7 @@ Ce projet vous propose une introduction progressive pour comprendre, créer et m
 
 👉 2. Passez à [docs/premiers-workflows.md](docs/02-premiers-workflows.md) pour créer votre premier workflow.
 
-👉 3. Suivez les exercices proposés dans [docs/exercices.md](docs/04exercices.md).
+👉 3. Suivez les exercices proposés dans [docs/exercices.md](docs/04-exercices.md).
 
 Bonne découverte ! ✨
 

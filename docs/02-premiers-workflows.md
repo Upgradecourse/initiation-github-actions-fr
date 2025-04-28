@@ -26,6 +26,9 @@ jobs:
   verifier-fichiers:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+    
       - name: Vérifier la présence d'un README
         run: |
           if [ -f README.md ]; then
@@ -37,3 +40,12 @@ jobs:
       - name: Afficher un message final
         run: echo "🎉 Fin du workflow avec succès."
 ```
+
+💡 **Attention :**  
+Le fichier `README.md` doit être placé **directement à la racine du dépôt**.  
+Si vous placez le `README.md` dans un sous-dossier (par exemple `docs/README.md` ou `readme/README.md`),  
+le workflow **ne le trouvera pas** et l'étape de vérification échouera.  
+Assurez-vous que le fichier `README.md` est visible dès l'accueil du dépôt GitHub.
+
+
+

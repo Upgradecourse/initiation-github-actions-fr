@@ -33,6 +33,16 @@ Ce projet vous propose une introduction progressive pour comprendre, créer et m
 6. Bonnes pratiques pour la CI/CD
 7. Exercices pratiques et défis
 
+## 🚀 Commencez ici
+
+👉 1. Lisez [docs/introduction.md](docs/introduction.md) pour comprendre GitHub Actions.
+
+👉 2. Passez à [docs/premiers-workflows.md](docs/premiers-workflows.md) pour créer votre premier workflow.
+
+👉 3. Suivez les exercices proposés dans [docs/exercices.md](docs/exercices.md).
+
+Bonne découverte ! ✨
+
 ## 📖 Licence
 
 Ce projet pédagogique est sous licence [MIT](LICENSE).

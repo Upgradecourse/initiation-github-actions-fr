@@ -47,5 +47,57 @@ Si vous placez le `README.md` dans un sous-dossier (par exemple `docs/README.md`
 le workflow **ne le trouvera pas** et l'étape de vérification échouera.  
 Assurez-vous que le fichier `README.md` est visible dès l'accueil du dépôt GitHub.
 
+---
+
+🚀 Déclencher le workflow
+Maintenant que votre fichier premier-workflow.yml est en place, il faut déclencher le workflow pour le tester.
+
+Pour cela, vous devez provoquer un événement push.
+
+🛠️ Que faire pour déclencher le workflow ?
+Par exemple, ajoutez un simple fichier vide (comme test.txt) à la racine de votre dépôt.
+
+Ou modifiez un autre fichier existant (autre que README.md si possible).
+
+Faites un commit et poussez votre changement.
+
+👉 Dès que GitHub détecte un push, votre workflow se déclenchera automatiquement.
+
+
+Après avoir effectué un push :
+
+Allez dans l'onglet Actions de votre dépôt GitHub.
+
+Vous verrez votre nouveau workflow "Premier vrai workflow" en cours ou terminé.
+
+Dans les logs :
+
+✅ Un message vous indique si le README.md est présent.
+
+🎉 Un message confirme la fin du workflow.
+
+📸 Résultat attendu
+
+![Résultat du workflow réussi](../assets/workflow-success-premier.png)
+
+
+🔎 Explication des lignes importantes du workflow
+🛠️ uses: actions/checkout@v4
+Cette étape permet de télécharger (cloner) votre dépôt GitHub dans la machine virtuelle du runner.
+Sans elle, la machine est vide et ne peut pas accéder à vos fichiers (README.md, etc.).
+
+📋 Vérification du README
+
+if [ -f README.md ]; then
+Cette commande vérifie si le fichier README.md existe à la racine du dépôt.
+
+Si oui ➔ ✅ Message de succès
+
+Si non ➔ ❌ Message d'échec et le workflow échoue (exit 1)
+
+
+
+
+
 
 

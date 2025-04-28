@@ -105,6 +105,86 @@ Vous pouvez accéder à cette variable dans toutes les étapes du job en utilisa
 | Secrets          | Sécuriser des mots de passe et des clés API              |
 | Variables `env`  | Rendre les workflows plus lisibles et maintenables       |
 
+---
+
+## ✍️ Exercice : Créer un workflow avec plusieurs jobs, secrets et variables d'environnement
+
+### Objectifs :
+- Créer un workflow avec **deux jobs**.
+- Utiliser un **secret** pour protéger une clé API (par exemple, `MY_API_KEY`).
+- Utiliser une **variable d'environnement** pour afficher un message personnalisé dans les logs.
+
+### 🛠️ Instructions :
+
+1. Créez un fichier workflow dans `.github/workflows/exercice-avance.yml` avec le contenu suivant :
+
+```yaml
+name: Exercice avec jobs, secrets et variables d'environnement
+on: push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+        
+      - name: Vérifier que le fichier README.md est présent
+        run: |
+          if [ -f README.md ]; then
+            echo "✅ Le fichier README.md est bien présent !"
+          else
+            echo "❌ Attention : aucun README.md trouvé."
+            exit 1
+          fi
+
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
+    env:
+      MESSAGE: "N'oubliez pas : ne laissez jamais vos secrets visibles dans vos workflows !"
+    steps:
+      - name: Afficher un message personnalisé avec la variable d'environnement
+        run: echo "$MESSAGE"
+      
+      - name: Utiliser un secret dans les logs
+        run: echo "La clé API est : ${{ secrets.MY_API_KEY }}"
+```
+
+2. **Ajoutez le secret `MY_API_KEY` dans la section "Secrets" de votre dépôt :**
+
+   - Allez dans **Settings** > **Secrets and Variables** > **Actions** > **New repository secret**.
+   - Nommez-le `MY_API_KEY` et entrez une valeur (exemple fictif pour un token ou clé API).
+   
+   🛠️ **Exemple de valeur pour un secret** :  
+   ```text
+   1234567890abcdef
+   ```
+3. **Effectuez un push** pour tester le workflow
+
+---
+
+4. **Resultats attendus**
+
+## Job 2 : Affichage du message personnalisé et du secret dans les logs
+
+Dans **Job 2**, nous allons afficher deux éléments dans les logs :
+
+1. **Message personnalisé** : Affichage du message défini par la variable d'environnement `MESSAGE`.
+
+2. **Secret dans les logs** : Utilisation du secret `MY_API_KEY`.  
+   **Note importante** : Les secrets ne sont **pas affichés en clair** dans les logs. GitHub remplace le contenu réel par `***` pour protéger les informations sensibles.
+
+### Exemple de résultat dans les logs :
+
+```text
+✅ Le fichier README.md est bien présent !
+La clé API est : ***
+```
+
+
+
+
 
 
 

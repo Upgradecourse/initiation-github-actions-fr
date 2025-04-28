@@ -2,6 +2,22 @@
 
 Bienvenue dans ce premier chapitre d'**initiation à GitHub Actions** !
 
+---
+
+## 🛠️ Avant de commencer
+
+Avant de suivre ce tutoriel, assurez-vous de :
+
+1. **Créer un nouveau dépôt GitHub**  
+   👉 Nom recommandé : `initiation-github-actions`  
+   👉 Choisissez Public ou Privé selon votre préférence.  
+   👉 Initialisez avec un fichier README.
+
+2. **Créer le dossier suivant dans votre dépôt : .github/workflows/ 
+3. **Travailler soit directement sur GitHub, soit en clonant votre dépôt en local.**
+
+---
+
 ## 🤔 Qu'est-ce que GitHub Actions ?
 
 GitHub Actions est une plateforme d'automatisation directement intégrée à GitHub.  

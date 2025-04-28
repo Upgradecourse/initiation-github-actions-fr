@@ -82,6 +82,7 @@ Dans les logs :
 
 
 🔎 Explication des lignes importantes du workflow
+
 🛠️ uses: actions/checkout@v4
 Cette étape permet de télécharger (cloner) votre dépôt GitHub dans la machine virtuelle du runner.
 Sans elle, la machine est vide et ne peut pas accéder à vos fichiers (README.md, etc.).

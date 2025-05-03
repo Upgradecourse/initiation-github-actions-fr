@@ -13,7 +13,7 @@ Ce projet vous propose une introduction progressive pour comprendre, créer et m
 - Ajouter des jobs et des étapes (steps) simples
 - Utiliser des actions publiques
 - Manipuler les secrets et les variables d'environnement
-- Adopter de bonnes pratiques (ex : conventions Gitmoji)
+- Adopter de bonnes pratiques (ex : conventions commit)
 
 ---
 
